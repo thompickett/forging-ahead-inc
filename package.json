@@ -1,0 +1,26 @@
+{
+  "name": "forging-ahead-inc",
+  "version": "1.0.0",
+  "description": "Selling misc metalworks for Forging Ahead Inc.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thompickett/forging-ahead-inc.git"
+  },
+  "keywords": [
+    "blacksmith",
+    "lighting",
+    "railings",
+    "custom",
+    "pickett"
+  ],
+  "author": "Thom Schlereth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thompickett/forging-ahead-inc/issues"
+  },
+  "homepage": "https://github.com/thompickett/forging-ahead-inc#readme"
+}
