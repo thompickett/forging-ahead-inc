@@ -12,8 +12,24 @@ app.get('/', (request,response) => {
   response.sendFile(path.join(__dirname, '/static/index.html'));
 });
 
-app.get('/image.jpg', function (request,response) {
+app.get('/main-page-background.jpg', function (request,response) {
   response.sendFile(path.join(__dirname, '/static/photos/spiral_stair_draft.jpg'));
+});
+
+app.get('/light-for-routes.png', function (request,response) {
+  response.sendFile(path.join(__dirname, '/static/photos/light_one.png'));
+});
+
+app.get('/peacock.png', function (request,response) {
+  response.sendFile(path.join(__dirname, '/static/photos/peacock.png'));
+});
+
+app.get('/light-for-routes-alt.png', function (request,response) {
+  response.sendFile(path.join(__dirname, '/static/photos/light_one_alt.png'));
+});
+
+app.get('/background.jpg', function (request,response) {
+  response.sendFile(path.join(__dirname, '/static/photos/background.jpg'));
 });
 
 if (!module.parent) {
