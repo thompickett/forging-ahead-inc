@@ -12,6 +12,10 @@ app.get('/', (request,response) => {
   response.sendFile(path.join(__dirname, '/static/index.html'));
 });
 
+app.get('/image.jpg', function (request,response) {
+  response.sendFile(path.join(__dirname, '/static/photos/spiral_stair_draft.jpg'));
+});
+
 if (!module.parent) {
   let port = app.get('port')
 
