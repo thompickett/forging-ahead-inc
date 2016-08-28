@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/thompickett/forging-ahead-inc/issues"
   },
-  "homepage": "https://github.com/thompickett/forging-ahead-inc#readme"
+  "homepage": "https://github.com/thompickett/forging-ahead-inc#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "request": "^2.74.0"
+  }
 }
