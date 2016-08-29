@@ -3,10 +3,110 @@
   <head>
     <title>Forging Ahead Inc.</title>
     <link rel="stylesheet" type="text/css" href="/css/main_page.css" />
-    <link rel="stylesheet" type="text/javascript" href="/js/main_page.js" />
+    <link type="text/javascript" href="/js/main_page.js" />
   </head>
   <body>
-    <h1>Forging Ahead Inc.</h1>
-    <h2>Rod Pickett</h2>
+    <div class="background-image"></div>
+    <h1 class='pageText titleText' >Forging Ahead Inc.</h1>
+    <h2 class='pageText ownerText' >by Rod Pickett</h2>
+
+    <div id="about">
+      <img class="light-dif" id="about-light" src="/light-for-routes-alt.png" alt="light" />
+      <a id="about-link" class="pageText" href="/about">About us</a>
+    </div>
+
+    <div id="contact">
+      <img class="light-dif" id="contact-light" src="/light-for-routes-alt.png" alt="light" />
+      <a id="contact-link" class="pageText" href="/contact">Contact us</a>
+    </div>
+
+    <div id="store">
+      <img class="light-dif" id="store-light" src="/light-for-routes-alt.png" alt="light" />
+      <a id="store-link" class="pageText" href="/store">Store</a>
+    </div>
+
+    <div id="media">
+      <img class="light-dif" id="media-light" src="/light-for-routes-alt.png" alt="light" />
+      <a id="media-link" class="pageText" href="/media">Media</a>
+    </div>
+
+    <div class='pageText listText'>
+      <p>Moving metal</p>
+      <p>Making it beautiful</p>
+      <p>Creating functional art</p>
+    </div>
+
+    <p class='pageText addressText'>
+      211 S. Skylane Dr., Durango, CO, 81303 ~ (970)259-9706
+    </p>
+    <p class='pageText copyrightText'>
+      Copyright Forging Ahead Inc 2016
+    </p>
+
+    <script type="text/javascript">
+      var about = document.getElementById("about");
+      var aboutLight = document.getElementById("about-light");
+      var aboutLink = document.getElementById("about-link");
+
+      var contact = document.getElementById("contact");
+      var contactLight = document.getElementById("contact-light");
+      var contactLink = document.getElementById("contact-link");
+
+      var store = document.getElementById("store");
+      var storeLight = document.getElementById("store-light");
+      var storeLink = document.getElementById("store-link");
+
+      var media = document.getElementById("media");
+      var mediaLight = document.getElementById("media-light");
+      var mediaLink = document.getElementById("media-link");
+
+      about.addEventListener("mouseover", lightUp);
+      media.addEventListener("mouseover", lightUp);
+      store.addEventListener("mouseover", lightUp);
+      contact.addEventListener("mouseover", lightUp);
+
+      function lightUp() {
+        if (this.id === "about") {
+          aboutLight.src = "/light-for-routes.png"
+          aboutLink.classList.add("lit-up-color")
+        } else if (this.id === "contact") {
+          contactLight.src = "/light-for-routes.png"
+          contactLink.classList.add("lit-up-color")
+        } else if (this.id === "store") {
+          storeLight.src = "/light-for-routes.png"
+          storeLink.classList.add("lit-up-color")
+        } else if (this.id === "media") {
+          mediaLight.src = "/light-for-routes.png"
+          mediaLink.classList.add("lit-up-color")
+        }
+      };
+
+      about.addEventListener("mouseout", lightDown);
+      media.addEventListener("mouseout", lightDown);
+      contact.addEventListener("mouseout", lightDown);
+      store.addEventListener("mouseout", lightDown);
+
+      function lightDown() {
+        if (this.id === "about") {
+          aboutLight.src = "/light-for-routes-alt.png"
+          aboutLink.classList.remove("lit-up-color")
+        } else if (this.id === "contact") {
+          contactLight.src = "/light-for-routes-alt.png"
+          contactLink.classList.remove("lit-up-color")
+        } else if (this.id === "store") {
+          storeLight.src = "/light-for-routes-alt.png"
+          storeLink.classList.remove("lit-up-color")
+        } else if (this.id === "media") {
+          mediaLight.src = "/light-for-routes-alt.png"
+          mediaLink.classList.remove("lit-up-color")
+        }
+      };
+
+    </script>
+
+
+
+
+
   </body>
 </html>
