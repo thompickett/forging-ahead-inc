@@ -6,7 +6,11 @@
     <link type="text/javascript" href="/js/main_page.js" />
   </head>
   <body>
-    <div class="background-image"></div>
+
+    <div id="main-page-background" >
+      <img class="" id="main-page-background-photo" src="/main-page-background.jpg" alt="light" />
+    </div>
+
     <h1 class='pageText titleText' >Forging Ahead Inc.</h1>
     <h2 class='pageText ownerText' >by Rod Pickett</h2>
 
@@ -25,12 +29,12 @@
       <a id="store-link" class="pageText" href="/store">Store</a>
     </div>
 
-    <div id="media">
-      <img class="light-dif" id="media-light" src="/light-for-routes-alt.png" alt="light" />
-      <a id="media-link" class="pageText" href="/media">Media</a>
+    <div id="gallery">
+      <img class="light-dif" id="gallery-light" src="/light-for-routes-alt.png" alt="light" />
+      <a id="gallery-link" class="pageText" href="/gallery">Gallery</a>
     </div>
 
-    <div class='pageText listText'>
+    <div class='pageText listText' id="description">
       <p>Moving metal</p>
       <p>Making it beautiful</p>
       <p>Creating functional art</p>
@@ -39,6 +43,7 @@
     <p class='pageText addressText'>
       211 S. Skylane Dr., Durango, CO, 81303 ~ (970)259-9706
     </p>
+
     <p class='pageText copyrightText'>
       Copyright Forging Ahead Inc 2016
     </p>
@@ -56,12 +61,12 @@
       var storeLight = document.getElementById("store-light");
       var storeLink = document.getElementById("store-link");
 
-      var media = document.getElementById("media");
-      var mediaLight = document.getElementById("media-light");
-      var mediaLink = document.getElementById("media-link");
+      var gallery = document.getElementById("gallery");
+      var galleryLight = document.getElementById("gallery-light");
+      var galleryLink = document.getElementById("gallery-link");
 
       about.addEventListener("mouseover", lightUp);
-      media.addEventListener("mouseover", lightUp);
+      gallery.addEventListener("mouseover", lightUp);
       store.addEventListener("mouseover", lightUp);
       contact.addEventListener("mouseover", lightUp);
 
@@ -75,14 +80,14 @@
         } else if (this.id === "store") {
           storeLight.src = "/light-for-routes.png"
           storeLink.classList.add("lit-up-color")
-        } else if (this.id === "media") {
-          mediaLight.src = "/light-for-routes.png"
-          mediaLink.classList.add("lit-up-color")
+        } else if (this.id === "gallery") {
+          galleryLight.src = "/light-for-routes.png"
+          galleryLink.classList.add("lit-up-color")
         }
       };
 
       about.addEventListener("mouseout", lightDown);
-      media.addEventListener("mouseout", lightDown);
+      gallery.addEventListener("mouseout", lightDown);
       contact.addEventListener("mouseout", lightDown);
       store.addEventListener("mouseout", lightDown);
 
@@ -96,17 +101,13 @@
         } else if (this.id === "store") {
           storeLight.src = "/light-for-routes-alt.png"
           storeLink.classList.remove("lit-up-color")
-        } else if (this.id === "media") {
-          mediaLight.src = "/light-for-routes-alt.png"
-          mediaLink.classList.remove("lit-up-color")
+        } else if (this.id === "gallery") {
+          galleryLight.src = "/light-for-routes-alt.png"
+          galleryLink.classList.remove("lit-up-color")
         }
       };
 
     </script>
-
-
-
-
 
   </body>
 </html>

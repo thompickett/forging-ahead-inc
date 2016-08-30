@@ -1,3 +1,14 @@
+#main-page-background {
+  overflow: hidden;
+  height:100vh;
+}
+
+#main-page-background-photo {
+  height:100vh;
+  position: absolute;
+  left: 130px;
+}
+
 .pageText {
   color: #84888A;
   font-family: Papyrus;
@@ -5,16 +16,16 @@
 }
 
 .titleText {
-  /*color: #7A1721;*/
-  color: #A3222F;
+  color: #7A1721;
+  /*color: #A3222F;*/
   position: absolute;
   left: 25px;
   top: 20px;
 }
 
 .ownerText {
-  color: #A3222F;
-  /*color: #7A1721;*/
+  /*color: #A3222F;*/
+  color: #7A1721;
   position: absolute;
   left: 25px;
   top: 75px;
@@ -40,10 +51,11 @@
 }
 
 html {
-  background: url(../main-page-background.jpg) no-repeat;
+  background-color: #595959;
+  /*background: url(../main-page-background.jpg) no-repeat;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 10% 30%;
+  background-position: 10% 30%;*/
 }
 
 #about-light {
@@ -85,24 +97,17 @@ html {
   top: 250px;
 }
 
-#media-light {
+#gallery-light {
   position: absolute;
   left: 1050px;
   top: 40px;
 }
 
-#media-link {
+#gallery-link {
   font-weight: bold;
   position: absolute;
   left: 1100px;
   top: 250px;
-}
-
-#peacock {
-  position: absolute;
-  right: -100px;
-  bottom: -70px;
-  height: 400px;
 }
 
 .light-dif {
@@ -112,4 +117,10 @@ html {
 .lit-up-color {
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FDFAC5, 0 0 20px #FDFAC5, 0 0 30px #FDFAC5, 0 0 40px #EA9639, 0 0 50px #EA9639, 0 0 75px #EA9639;
 	letter-spacing: .5px;
+}
+
+#description {
+  /*color: #A3222F;*/
+  color: #7A1721;
+  font-weight: bold;
 }

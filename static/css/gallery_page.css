@@ -1,0 +1,50 @@
+html {
+  background-color: #595959;
+}
+
+#background-photo {
+  position: absolute;
+  width: 2000px;
+  left: -375px;
+  top: -200px;
+  z-index: 0;
+}
+
+.pageText {
+  color: #7A1721;
+  font-family: Papyrus;
+  text-decoration: none;
+}
+
+.buttons {
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  z-index: 1;
+}
+
+#prev-button {
+  left: 100px;
+  top: 100px;
+}
+
+#next-button {
+  right: 100px;
+  top: 100px;
+}
+
+#home-button {
+  left: 20px;
+  top: 10px;
+}
+
+.gallery-photo {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  top: -10px;
+  left: 365px;
+  z-index: -1;
+}
