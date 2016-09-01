@@ -3,6 +3,7 @@ const app = express();
 
 const path = require('path');
 
+app.locals.whatever = [];
 
 app.use(express.static('static'));
 

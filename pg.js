@@ -49,3 +49,23 @@ pool
       console.log('server is listening on 3001')
     })
   })
+
+//pg.js
+
+// set config variables
+// define error handling
+// creates a function that takes the sql query and passes it to postgres
+
+
+// ideas.js
+
+// require in custom postgres wrapper
+// export functions like find, create, destroy - those function would write the sql query and pass it to your postgres wrapper
+module.exports = {
+
+  // interface to build active record style calls
+}
+
+module.exports = {
+  find: findIdea,
+}
